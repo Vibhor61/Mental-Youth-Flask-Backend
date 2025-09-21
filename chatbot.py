@@ -7,7 +7,7 @@ import os
 
 chatbot_bp = Blueprint("chatbot_bp", __name__)
 
-embeddings = np.load("ChunkedEmbedding.npy").astype(np.float32)
+embeddings = np.load("ChunkedEmbeddings.npy").astype(np.float32)
 index = faiss.read_index("faiss_index.index")
 with open("chunked_texts.json", "r", encoding="utf-8") as f:
     chunked_texts = json.load(f)
@@ -32,3 +32,4 @@ def ask():
     query = data["query"]
     answer = get_response(query)
     return jsonify({"answer": answer})
+
