@@ -2,9 +2,8 @@ Flask==3.1.2
 flask-cors==6.0.1
 gunicorn
 numpy==2.3.3
-sentence-transformers==5.1.0
-torch>=2.0.1,<2.9.0
-transformers>=4.31.0,<4.57
+sentence-transformers==2.2.2
+transformers==4.31.0
 faiss-cpu==1.12.0
 protobuf==6.32.1
 python-dotenv==1.1.1
